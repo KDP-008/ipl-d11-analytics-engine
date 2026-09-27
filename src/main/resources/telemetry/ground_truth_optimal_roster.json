@@ -1,0 +1,112 @@
+{
+  "selectedPlayerIds": [
+    101,
+    102,
+    103,
+    108,
+    110,
+    111,
+    201,
+    202,
+    203,
+    205,
+    208
+  ],
+  "captainId": 102,
+  "captainName": "Rachin Ravindra",
+  "viceCaptainId": 202,
+  "viceCaptainName": "Ishan Kishan",
+  "totalCreditsUsed": 97.0,
+  "basePoints": 459,
+  "totalFantasyPoints": 627.5,
+  "players": [
+    {
+      "playerId": 101,
+      "playerName": "Ruturaj Gaikwad",
+      "team": "CSK",
+      "role": "BATSMAN",
+      "credit": 9.5,
+      "points": 87
+    },
+    {
+      "playerId": 102,
+      "playerName": "Rachin Ravindra",
+      "team": "CSK",
+      "role": "ALL_ROUNDER",
+      "credit": 8.5,
+      "points": 114
+    },
+    {
+      "playerId": 103,
+      "playerName": "Ajinkya Rahane",
+      "team": "CSK",
+      "role": "BATSMAN",
+      "credit": 8.0,
+      "points": 0
+    },
+    {
+      "playerId": 108,
+      "playerName": "Shardul Thakur",
+      "team": "CSK",
+      "role": "BOWLER",
+      "credit": 8.0,
+      "points": 35
+    },
+    {
+      "playerId": 110,
+      "playerName": "Mustafizur Rahman",
+      "team": "CSK",
+      "role": "BOWLER",
+      "credit": 8.5,
+      "points": 0
+    },
+    {
+      "playerId": 111,
+      "playerName": "Matheesha Pathirana",
+      "team": "CSK",
+      "role": "BOWLER",
+      "credit": 9.0,
+      "points": 0
+    },
+    {
+      "playerId": 201,
+      "playerName": "Rohit Sharma",
+      "team": "MI",
+      "role": "BATSMAN",
+      "credit": 10.0,
+      "points": 14
+    },
+    {
+      "playerId": 202,
+      "playerName": "Ishan Kishan",
+      "team": "MI",
+      "role": "WICKET_KEEPER",
+      "credit": 8.5,
+      "points": 109
+    },
+    {
+      "playerId": 203,
+      "playerName": "Suryakumar Yadav",
+      "team": "MI",
+      "role": "BATSMAN",
+      "credit": 10.0,
+      "points": 92
+    },
+    {
+      "playerId": 205,
+      "playerName": "Hardik Pandya",
+      "team": "MI",
+      "role": "ALL_ROUNDER",
+      "credit": 9.5,
+      "points": 4
+    },
+    {
+      "playerId": 208,
+      "playerName": "Mohammad Nabi",
+      "team": "MI",
+      "role": "ALL_ROUNDER",
+      "credit": 7.5,
+      "points": 4
+    }
+  ]
+}
