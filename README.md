@@ -2,50 +2,7 @@
 
 A high-performance, offline data engineering, cricket stream processing, and combinatorial optimization playground built on **Spring Boot** and modern **Java (Java 21 LTS / Java 25 ready)**.
 
-This engine serves as an independent analytics microservice and evaluation benchmark for testing autonomous AI coding agents on multi-file engineering problems.
-
 ---
-
-## Architecture Overview
-
-```
-┌────────────────────────────────────────────────────────────────────────────────────────┐
-│                        IPL D11 ANALYTICS ENGINE ARCHITECTURE                           │
-├────────────────────────────────────────────────────────────────────────────────────────┤
-│                                                                                        │
-│   [Historical NDJSON Telemetry] (246 events, match_284_csk_vs_mi.ndjson)               │
-│                                  │                                                     │
-│                                  ▼                                                     │
-│   ┌────────────────────────────────────────────────────────────────────────────────┐   │
-│   │                      STREAM INGESTION & CRICKET STATE MACHINE                  │   │
-│   │  - MatchReplaySimulator: Configurable playback (1x, 100x, BURST)               │   │
-│   │  - DeliveryStreamProcessor: Invariants, strike rotation, over limits, free-hit │   │
-│   └──────────────────────┬───────────────────────────────────┬─────────────────────┘   │
-│                          │                                   │                         │
-│                          ▼                                   ▼                         │
-│   ┌──────────────────────────────┐   ┌─────────────────────────────────────────────┐   │
-│   │  REAL-TIME FPS ENGINE        │   │     COLUMNAR OLAP STORAGE LAYER             │   │
-│   │  - Incremental delta scoring │   │  - DuckDB / Parquet time-series tables      │   │
-│   │  - Milestones (30/50/100, 3/5│   │  - Partitioned: season/match/innings        │   │
-│   │    wickets, maidens, economy)│   │  - Phase analytics (Powerplay, Middle, Death│   │
-│   └──────────────┬───────────────┘   └─────────────────────────────────────────────┘   │
-│                  │                                                                     │
-│                  ▼                                                                     │
-│   ┌──────────────────────────────┐   ┌─────────────────────────────────────────────┐   │
-│   │  LIVE CONTEST LEADERBOARD    │   │       COMBINATORIAL ROSTER OPTIMIZER        │   │
-│   │  - O(log N) updates & rank   │   │  - Constrained 0-1 Knapsack / MILP Solver   │   │
-│   │  - Standard "1224" ranking   │   │  - 100-credit budget, role bounds, max 7    │   │
-│   └──────────────────────────────┘   │  - Optimal fantasy team selection in <50ms  │   │
-│                                      └─────────────────────────────────────────────┘   │
-└────────────────────────────────────────────────────────────────────────────────────────┘
-```
-
----
-
-## Benchmark Design & Evaluation Criteria
-
-For the complete senior-engineer specification, grading rubrics, and the 18-file touchpoint matrix, refer to:
-[IPL_D11_Analytics_Engine_Specification.md](../IPL_D11_Analytics_Engine_Specification.md)
 
 ### Verification Fixtures (100% Offline):
 * `src/main/resources/telemetry/match_284_csk_vs_mi.ndjson`: 246 deliveries from a full CSK vs MI IPL match.

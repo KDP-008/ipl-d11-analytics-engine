@@ -12,7 +12,7 @@
     <artifactId>ipl-d11-analytics-engine</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>IPL D11 Analytics Engine</name>
-    <description>High-Performance Cricket Telemetry Streaming, Columnar Storage and Knapsack Roster Optimization Engine</description>
+    <description>High Performance Cricket Telemetry Streaming, Columnar Storage and Knapsack Roster Optimization Engine</description>
 
     <properties>
         <java.version>21</java.version>
