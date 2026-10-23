@@ -13,7 +13,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * Baseline incremental fantasy point calculator.
+ * Incremental fantasy point calculator.
  */
 @Service
 public class DefaultFantasyPointEngine implements FantasyPointEngine {

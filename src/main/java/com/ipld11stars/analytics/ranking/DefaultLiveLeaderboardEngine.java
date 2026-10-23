@@ -11,8 +11,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
 /**
- * Baseline live leaderboard ranking implementation.
- * Agents are tasked with optimizing this to an O(log N) Fenwick Tree / Skip List.
+ * In-memory live contest leaderboard ranking implementation.
  */
 @Service
 public class DefaultLiveLeaderboardEngine implements LiveLeaderboardEngine {

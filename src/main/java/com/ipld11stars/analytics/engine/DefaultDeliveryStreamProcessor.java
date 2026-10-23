@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Baseline state machine tracking cricket delivery state.
+ * State machine tracking cricket delivery state.
  */
 @Service
 public class DefaultDeliveryStreamProcessor implements DeliveryStreamProcessor {

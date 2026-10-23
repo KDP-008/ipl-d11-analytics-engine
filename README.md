@@ -1,8 +1,8 @@
 # IPL D11 Analytics Engine
 
-A high-performance, offline data engineering, cricket stream processing, and combinatorial optimization playground built on **Spring Boot** and modern **Java (Java 21 LTS / Java 25 ready)**.
+A high-performance, offline data engineering, cricket stream processing, and combinatorial optimization service built on **Spring Boot** and modern **Java (Java 21 LTS / Java 25 ready)**.
 
-This engine serves as an independent analytics microservice and evaluation benchmark for testing autonomous AI coding agents on multi-file engineering problems.
+This engine serves as an analytics microservice for ball-by-ball telemetry ingestion, incremental fantasy scoring, partitioned OLAP storage, and constrained roster optimization.
 
 ---
 
@@ -40,9 +40,6 @@ This engine serves as an independent analytics microservice and evaluation bench
 └────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
----
-
-## Benchmark Design & Evaluation Criteria
 ---
 
 ## Quick Start & Verification

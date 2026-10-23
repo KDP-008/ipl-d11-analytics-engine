@@ -14,7 +14,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * Baseline in-memory and directory-partitioned columnar storage adapter.
+ * In-memory and directory-partitioned columnar storage adapter.
  */
 @Service
 public class DefaultColumnarStorageService implements ColumnarStorageService {

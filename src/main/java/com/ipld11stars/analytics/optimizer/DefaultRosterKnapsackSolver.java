@@ -15,9 +15,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 /**
- * Baseline roster optimizer implementation.
- * Provides a greedy-with-backtracking heuristic baseline for agents to benchmark and replace
- * with a high-performance Branch-and-Bound / MILP solver.
+ * Combinatorial roster optimizer implementation using recursive branch-and-bound search.
  */
 @Service
 public class DefaultRosterKnapsackSolver implements RosterKnapsackSolver {
